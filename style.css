@@ -19,6 +19,9 @@ button {
     cursor: pointer;
 }
 
+.body {
+    position: relative;
+}
 
 /* body */
 
@@ -83,4 +86,15 @@ main,
     color: white;
 }
 
-/* animation section */
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3rem;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.back:hover {
+    color: rgb(124, 91, 91);
+}
