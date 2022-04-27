@@ -15,8 +15,6 @@ button {
     border: none;
     font-size: 1.15rem;
     border-radius: 1rem;
-    background-color: red;
-    color: white;
     margin: 3rem auto;
     cursor: pointer;
 }
@@ -31,17 +29,23 @@ main,
     align-items: center;
 }
 
+.main {
+    max-width: 100vw;
+}
+
 .info {
     flex-direction: column;
 }
 
 .section {
+    cursor: pointer;
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: 1s all ease-in-out;
 }
 
 .section-1 {
@@ -52,19 +56,20 @@ main,
     background: url(./minimalist-desktop-14.jpg) center/cover no-repeat;
 }
 
-.apple {
+.ios {
     background-color: black;
     transition: 0.2s all ease-in-outs;
     border: 2px solid black;
+    color: white;
 }
 
 
-.apple:hover {
+.ios:hover {
     background: transparent;
     color: black;
 }
 
-.samsung {
+.android {
     background-color: white;
     color: black;
     font-weight: bolder;
@@ -73,7 +78,7 @@ main,
 }
 
 
-.samsung:hover {
+.android:hover {
     background: transparent;
     color: white;
 }
