@@ -6,12 +6,33 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 6rem;
+}
+
+button {
+    padding: .85rem 2rem;
+    border: none;
+    font-size: 1.15rem;
+    border-radius: 1rem;
+    background-color: red;
+    color: white;
+    margin: 3rem auto;
+    cursor: pointer;
+}
+
+
 /* body */
 
-main {
+main,
+.info {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.info {
+    flex-direction: column;
 }
 
 .section {
@@ -22,3 +43,39 @@ main {
     align-items: center;
     height: 100vh;
 }
+
+.section-1 {
+    background: url(./701802.jpg) center/cover no-repeat;
+}
+
+.section-2 {
+    background: url(./minimalist-desktop-14.jpg) center/cover no-repeat;
+}
+
+.apple {
+    background-color: black;
+    transition: 0.2s all ease-in-outs;
+    border: 2px solid black;
+}
+
+
+.apple:hover {
+    background: transparent;
+    color: black;
+}
+
+.samsung {
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    transition: 0.2s all ease-in-outs;
+    border: 2px solid white;
+}
+
+
+.samsung:hover {
+    background: transparent;
+    color: white;
+}
+
+/* animation section */
